@@ -75,18 +75,18 @@
 
         <form action="/login" method="POST">
             <input type="hidden"><a href="{{ url_for('login') }}" class="btn btn-secondary"></a>
-            <button type="submit">登入</button>
+            <button type="submit">登入巨軟系統儀表板</button>
         </form>
     </div>
     
     <dialog id="myDialog">
-        <p>
+        <div>
             <p class="error-message">!! 錯誤 !!</p>
             <p class="warning-message">你不是使用巨軟系統，WIN11 會對你的電腦造成危害。</p>
-            <p class="purchase-message">請立刻購買我們的巨軟系統。</p>
-        </p>
+            <p class="purchase-message"><a href="https://youtu.be/UIp6_0kct_U">請立刻購買我們的巨軟系統。</a></p>
+        </div>
         <button onclick="hideDialog()">Close</button>
-    </dialog>
+    </dialog>    
 
     <script>
         var dialog = document.getElementById("myDialog");
