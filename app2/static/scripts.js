@@ -7,7 +7,7 @@ async function checkServerStatus() {
         const response = await fetch('/check_server_status');
         const result = await response.json();
         if (result.status === 'online') {
-            serverStatusElement.textContent = 'Minecraft 伺服器在線上！\n IP: 210.6.29.237:25565';
+            serverStatusElement.textContent = 'Minecraft 伺服器在線上！';
             serverStatusElement.classList.remove('alert-danger');
             serverStatusElement.classList.add('alert-success');
         } else {
